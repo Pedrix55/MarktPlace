@@ -21,7 +21,7 @@ export default function InformaticaComponent({produtos, categoria, onAdd, adicio
           </div> 
           <button onClick={()=>{
                             adicionarFavoritos(p);
-                            console.log(p)
+                            //console.log(p)
                         }}>Adicionar</button>
 
                         <button onClick={()=>{

@@ -19,7 +19,7 @@ function SalgadoComponent ({ salgadoProdutos, categoria, onAdd, adicionarFavorit
                         {p.nome}{p.valor}
                         <button onClick={()=>{
                             adicionarFavoritos(p);
-                            console.log(p)
+                            //console.log(p)
                         }}>Adicionar</button>
 
                         <button onClick={()=>{

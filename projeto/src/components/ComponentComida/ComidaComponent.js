@@ -19,7 +19,7 @@ function  ComidaComponent ({ comidaProdutos, categoria, onAdd, adicionarFavorito
                     </div>
                     <button id ='btnadd' onClick={()=>{
                         adicionarFavoritos(p);
-                        console.log(p)
+                        //console.log(p)
                     }}>Adicionar</button>
 
                     <button id='btnden' onClick={()=>{

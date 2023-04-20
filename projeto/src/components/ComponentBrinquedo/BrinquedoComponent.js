@@ -11,7 +11,7 @@ function BrinquedoComponent ({ brinquedoProdutos, adicionarFavoritos, adicionarD
                         {p.nome} R${p.preco}
                         <button onClick={()=>{
                             adicionarFavoritos(p);
-                            console.log(p)
+                            //console.log(p)
                         }}>Adicionar</button>
 
                         <button onClick={()=>{

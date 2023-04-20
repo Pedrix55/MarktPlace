@@ -205,20 +205,29 @@ function App() {
     }
   ]
 
+  
   const [favoritos, setFavoritos]=useState([])
-
-    function adicionarFavoritos(produto){ //O parâmetro passado será informado pelos componentes.
-      //Eles passaram um objeto, então: ao passar comidaProdutos, toda a lista será mostrada.
-      console.log(produto);
+  
+  function adicionarFavoritos(produto){ //O parâmetro passado será informado pelos componentes.
+    //Eles passaram um objeto, então: ao passar comidaProdutos, toda a lista será mostrada.    
+    const favEncontrado = favoritos.find( f => f.id === produto.id);
+    if(!favEncontrado){
       setFavoritos([...favoritos, produto]);
-      
-    } 
+    }else{
+      console.log("ja foi adicionado antes: "+ produto.nome)
+    }
+  } 
 
     const [denunciado, setDenunciado] = useState([]);
 
     function adicionarDenuciado(produto){
-      console.log(produto);
-      setDenunciado([...denunciado, produto])
+      //console.log(produto);
+      const denEncontrado = denunciado.find(f => f.id === produto.id);
+      if(!denEncontrado){
+        setDenunciado([...denunciado, produto])
+      }else{
+        console.log(`O produto ${produto.nome} já foi adicionado`)
+      }
     }
 
     // const [denunciado, setDenunciado]=useState([])
@@ -227,7 +236,7 @@ function App() {
     //   setDenunciado([...denunciado, produto])
     // }
 
-    console.log(favoritos);
+    //console.log(favoritos);
 
     return (
     <div className="App">

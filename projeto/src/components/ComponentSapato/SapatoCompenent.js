@@ -18,7 +18,7 @@ import React from 'react'
 
               <button onClick={()=>{
                adicionarFavoritos(p);
-                console.log(p)
+                //console.log(p)
               }}>Adicionar</button>
 
               <button onClick={()=>{

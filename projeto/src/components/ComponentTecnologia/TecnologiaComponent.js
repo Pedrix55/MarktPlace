@@ -19,7 +19,7 @@ function TecnologiaComponent ({ tecnologiaProdutos, categoria, onAdd, adicionarF
                         {p.nome} R${p.valor}
                         <button onClick={()=>{
                             adicionarFavoritos(p);
-                            console.log(p)
+                            //console.log(p)
                         }}>Adicionar</button>
 
                         <button onClick={()=>{
