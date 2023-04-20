@@ -10,23 +10,15 @@ export default function InformaticaComponent({produtos, categoria, onAdd, adicio
       {
           produtos.map(p => 
             <div key={p.id} className='telaInformaticaCard'>
-          <div>
-          Produto: {p.nome}
-          </div>
-          <div className='telaInformaticaImg'>
-          <img className='img' src={p.img} alt='Img Antonio' ></img>
-          </div>
-          <div>
-            Preço: R${p.preco}
-          </div> 
-          <div className='button' onClick={()=>{
-                            adicionarFavoritos(p);
-                            //console.log(p)
-                        }}>Adicionar</button>
-
-                        <div className='button' onClick={()=>{
-                            adicionarDenuciado(p);
-                        }}>Denuciar</div>
+              <div>
+              Produto: {p.nome}
+              </div>
+              <div className='telaInformaticaImg'>
+                <img className='img' src={p.img} alt='Img Antonio' ></img>
+              </div>
+              <div>
+                Preço: R${p.preco}
+              </div> 
           </div>
         )
     }
